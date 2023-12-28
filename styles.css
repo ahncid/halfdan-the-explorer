@@ -12,10 +12,109 @@ html {
 }
 
 header {
-    max-width: 100%;
-    min-height: 100vh;
-   background-image: url(./images/ac2.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/ac2.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eba486;
+  width: 100%;
+  height: 70px;
+  padding-top: 8%;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 17px;
+  margin-top: 150px;
+}
+.left-side .fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: 1px solid #eba486;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.right-side {
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.right-side ul {
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.right-side ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  border: 5px solid black;
+}
+.playerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 150px;
+  color: #eba486;
+  gap: 100px;
+  border: 5px solid yellow;
+}
+.player1,
+.player2,
+.player3,
+.player4 {
+  width: 200px;
+  height: 150px;
+  background-color: #151a25;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 150px;
+  width: 100%;
+  color: #eba486;
+  gap: 100px;
+  border: 5px solid red;
+}
+.box1,
+.box2 {
+  width: 200px;
+  height: 150px;
+  background-color: #fffff0;
+}
+.audioVisualizer {
+  height: 150px;
+  width: 400px;
+  background-color: #fffff0;
 }
