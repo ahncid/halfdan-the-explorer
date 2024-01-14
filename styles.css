@@ -30,13 +30,13 @@ navigation {
   color: #eba486;
   width: 100%;
   height: 70px;
-  padding-top: 8%;
+  gap: 500px;
 }
 .left-side {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
-  gap: 17px;
+  gap: 27px;
   margin-top: 150px;
 }
 .left-side .fa-brands {
@@ -49,15 +49,20 @@ navigation {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  color: #eba486;
+}
+.left-side .fa-brands:hover {
+  color: #fff;
+  border: 1px solid #fff;
 }
 .right-side {
-  width: 10%;
+  width: 25%;
   margin: 0 auto;
   margin-top: 150px;
 }
 .right-side ul {
   display: flex;
-  gap: 17px;
+  gap: 27px;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -69,31 +74,50 @@ navigation {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-header section {
+.right-side ul a:hover {
+  color: #fff;
+}
+.outer-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 150px;
-  border: 5px solid black;
+  margin-top: 20%;
+  gap: 57px;
+  width: 90%;
 }
 .playerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin-top: 150px;
   color: #eba486;
-  gap: 100px;
-  border: 5px solid yellow;
+  gap: 50px;
+  background-color: rgba(18, 21, 36, 0.1);
+  align-self: start;
+  width: 50%;
+  margin-top: 50px;
+}
+.playerContainer h2 {
+  font-size: 1.5;
 }
 .player1,
 .player2,
-.player3,
-.player4 {
+.player3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 200px;
   height: 150px;
-  background-color: #151a25;
+  background-color: #121524;
+  opacity: 0.8;
+  border-radius: 25px;
+  gap: 7px;
+}
+#volumeControl1,
+#volumeControl2,
+#volumeControl3 {
+  width: 100px;
 }
 
 .boxContainer {
@@ -101,20 +125,71 @@ header section {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-top: 150px;
+  color: #07022c;
+  gap: 50px;
+  align-self: start;
   width: 100%;
-  color: #eba486;
-  gap: 100px;
-  border: 5px solid red;
+}
+.containerforboxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 150px;
+  width: 50%;
+  margin-bottom: 50px;
+  margin-top: -150px;
 }
 .box1,
 .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 7px;
   width: 200px;
-  height: 150px;
-  background-color: #fffff0;
+  height: 200px;
+  background-color: rgba(255, 255, 240, 0.7);
+  border-radius: 25px;
 }
-.audioVisualizer {
+
+h6 {
+  font-size: 2rem;
+}
+.box1 p,
+.box2 p {
+  font-size: 1.2rem;
+  width: 180px;
+}
+.audioVisualizerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
   height: 150px;
-  width: 400px;
-  background-color: #fffff0;
+  width: 350px;
+  background-color: rgba(8, 17, 27, 0.5);
+  background-image: url(./images/halfdan.jpg);
+  background-size: 100% 100%;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+.playerContainer button {
+  height: 65px;
+  width: 65px;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 23, 38, 0.5),
+    rgba(150, 136, 135, 0.5),
+    rgba(255, 255, 253, 0.5)
+  );
+  border-radius: 50%;
+  border: 1px dotted white;
+}
+.playerContainer button:hover {
+  background-color: #eba486;
+}
+.playerContainer button:hover .fa-music {
+  color: #fff;
 }

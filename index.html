@@ -17,16 +17,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="./scripts/audioplayer.js" defer></script>
+
     <title>The Explorer</title>
   </head>
   <body>
     <header>
       <navigation
         ><div class="left-side">
-          <i class="fa-brands fa-soundcloud"></i
-          ><i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-spotify"></i>
+          <a href="https://soundcloud.com/halfdan-mjelde" target="_blank"
+            ><i class="fa-brands fa-soundcloud"></i
+          ></a>
+
+          <a href="https://www.facebook.com/halfdan.mjelde" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/mrhalfie/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://open.spotify.com/user/nosyyy2?LOS_4_="
+            target="_blank"
+            ><i class="fa-brands fa-spotify"></i
+          ></a>
         </div>
         <div class="right-side">
           <ul>
@@ -37,17 +50,97 @@
           </ul>
         </div></navigation
       >
-      <section>
+      <section class="outer-container">
         <div class="playerContainer">
-          <div class="player1">PlayIcon</div>
-          <div class="player2">PlayIcon</div>
-          <div class="player3">PlayIcon</div>
-          <div class="player4">PlayIcon</div>
+          <div class="player1">
+            <h2>Spaceman showcase</h2>
+            <div id="audioPlayer1">
+              <audio id="myAudio1">
+                <source src="./music/Spaceman-showcase.wav" type="audio/mpeg" />
+                Din browser understøtter ikke audio elementet.
+              </audio>
+              <button id="playButton1">
+                <i class="fa-solid fa-music"></i>
+              </button>
+            </div>
+            <input
+              type="range"
+              id="volumeControl1"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
+          <div class="player2">
+            <h2>The Beginning</h2>
+            <div id="audioPlayer2">
+              <audio id="myAudio2">
+                <source src="./music/The-Beginning.wav" type="audio/mpeg" />
+                Din browser understøtter ikke audio elementet.
+              </audio>
+              <button id="playButton2">
+                <i class="fa-solid fa-music"></i>
+              </button>
+            </div>
+            <input
+              type="range"
+              id="volumeControl2"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
+          <div class="player3">
+            <h2>The Other Side Bounce</h2>
+            <div id="audioPlayer3">
+              <audio id="myAudio3">
+                <source
+                  src="./music/The-Other-Side-Bounce.wav"
+                  type="audio/mpeg"
+                />
+                Din browser understøtter ikke audio elementet.
+              </audio>
+              <button id="playButton3">
+                <i class="fa-solid fa-music"></i>
+              </button>
+            </div>
+            <input
+              type="range"
+              id="volumeControl3"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+            />
+          </div>
         </div>
         <div class="boxContainer">
-          <div class="box1">Listen now</div>
-          <div class="audioVisualizer">Visualizer</div>
-          <div class="box2">Follow</div>
+          <div class="audioVisualizerContainer">
+            <canvas id="audioVisualizer"></canvas>
+          </div>
+          <div class="containerforboxes">
+            <div class="box1">
+              <h6>My first album</h6>
+              <p>
+                The Explorer is my first album. It is a small collection of
+                songs that i have made during my time in London. I've been
+                working on this album for a long time, and I am very proud of
+                it. I hope you enjoy it as much as I do.
+              </p>
+            </div>
+
+            <div class="box2">
+              <h6>Future</h6>
+              <p>
+                I enjoy playing music but do not know what the future holds. But
+                if you would like to be a part of my journey, you can follow me
+                on my social media accounts. I will be posting updates on my
+                music and my life. I hope to see you there!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </header>
