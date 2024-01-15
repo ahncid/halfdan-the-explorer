@@ -55,6 +55,9 @@ navigation {
   color: #fff;
   border: 1px solid #fff;
 }
+.left-side a {
+  text-decoration: none;
+}
 .right-side {
   width: 25%;
   margin: 0 auto;
